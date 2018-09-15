@@ -8,7 +8,9 @@ import android.widget.TextView;
 
 
 /**
- * App represents a simple tally counter.
+ * App repräsentiert einen einfachen Handzähler (Tally Counter). Hiermit
+ * sollen die Grundlagen des Event-Handlings für UI-Elemente demonstriert
+ * werden.
  * <br><br>
  *
  * This project is licensed under the terms of the BSD 3-Clause License.
@@ -32,7 +34,7 @@ public class MainActivity extends Activity
     /**
      * Lifecycle-Methode. Lädt Layout-Datei, füllt Member-Variablen
      * mit Referenzen auf UI-Elemente, und setzt Event-Handler-Objekt
-     * für Buttons.
+     * für die beiden Buttons.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +68,7 @@ public class MainActivity extends Activity
             return; // Event ignorieren, weil von unbekanntem UI-Element ausgelöst
         }
 
-        String anzeigeText = _zahl + "";      // Trick: int nach String wandeln
+        String anzeigeText = _zahl + ""; // Trick: int nach String wandeln
         _zahlTextView.setText( anzeigeText );
     }
 
