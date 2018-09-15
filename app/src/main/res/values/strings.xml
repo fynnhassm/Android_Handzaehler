@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Handzähler</string>
+
+    <string name="label_button_plus">Plus</string>
+    <string name="label_button_minus">Minus</string>
+    <string name="label_textview_zahl">0</string>
+
+</resources>
+
+
+
