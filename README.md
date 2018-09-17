@@ -9,6 +9,10 @@ Identifiers (names for classes, variables and methods) and UI texts are in Germa
 
 <br>
 
+The is also a [variant of this app for smartwatches with WearOS](https://github.com/MDecker-MobileComputing/HandzaehlerFuerWearOS).
+
+<br>
+
 ----
 ## Screenshots
 
