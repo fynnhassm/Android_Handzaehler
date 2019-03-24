@@ -10,6 +10,7 @@ Identifiers (names for classes, variables and methods) and UI texts are in Germa
 <br>
 
 The is also a [variant of this app for smartwatches with WearOS](https://github.com/MDecker-MobileComputing/HandzaehlerFuerWearOS).
+Another related Android app is this [traffic counter app](https://github.com/MDecker-MobileComputing/Android_Verkehrszaehler) with persistency (SQLite database).
 
 <br>
 
@@ -17,7 +18,6 @@ The is also a [variant of this app for smartwatches with WearOS](https://github.
 ## Screenshots
 
 ![Screenshot 1](screenshot_1.png)  ![Screenshot 2](screenshot_2.png)
-
 
 
 <br>
