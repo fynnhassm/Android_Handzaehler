@@ -56,17 +56,21 @@ public class MainActivity extends Activity
     /**
      * Event-Handler-Methode für die beiden Buttons.
      *
-     * @param v Referenz auf UI-Element, das das Event ausgelöst hat.
+     * @param view  Referenz auf UI-Element, das das Event ausgelöst hat.
      */
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
 
-        if (v == _plusButton) {
+        if (view == _plusButton) {
+
             _zahl++;
         }
-        else if (v == _minusButton) {
+        else if (view == _minusButton) {
+
             _zahl--;
+
         } else {
+
             return; // Event ignorieren, weil von unbekanntem UI-Element ausgelöst
         }
 
