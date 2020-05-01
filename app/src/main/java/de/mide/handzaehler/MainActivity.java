@@ -18,7 +18,6 @@ import android.widget.TextView;
 public class MainActivity extends Activity
                           implements View.OnClickListener {
 
-
     /** Enthält immer aktuellen Zähler-Wert. */
     protected int _zahl = 0;
 
