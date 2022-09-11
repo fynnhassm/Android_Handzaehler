@@ -15,6 +15,7 @@ Another related Android app is this [traffic counter app](https://github.com/MDe
 <br>
 
 ----
+
 ## Screenshots ##
 
 ![Screenshot 1](screenshot_1.png)  ![Screenshot 2](screenshot_2.png)
@@ -23,6 +24,7 @@ Another related Android app is this [traffic counter app](https://github.com/MDe
 <br>
 
 ----
+
 ## License ##
 
 See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License).
