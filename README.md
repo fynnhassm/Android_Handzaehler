@@ -1,5 +1,7 @@
 # Android-App "Handzähler" #
 
+<br>
+
 App represents a simple [tally counter](https://en.wikipedia.org/wiki/Tally_counter).
 The purpose of the app is it to demonstrate event-handling for buttons.
 
@@ -18,6 +20,7 @@ Another related Android app is this [traffic counter app](https://github.com/MDe
 
 ## Screenshots ##
 
+
 ![Screenshot 1](screenshot_1.png)  ![Screenshot 2](screenshot_2.png)
 
 
@@ -27,4 +30,7 @@ Another related Android app is this [traffic counter app](https://github.com/MDe
 
 ## License ##
 
+
+
 See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License).
+
