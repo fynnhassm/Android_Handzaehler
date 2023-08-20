@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     protected TextView _zahlTextView = null;
 
+    /**
+     * Lifecycle-Methode
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

@@ -31,6 +31,3 @@
         android:text="@string/label_button_minus" />
 
 </LinearLayout>
-
-
-
