@@ -6,18 +6,31 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
+/**
+ * Die Haupt-Activity der Anwendung "Handzähler". Diese Activity stellt eine einfache Benutzeroberfläche
+ * bereit, mit der der Benutzer einen Zählerwert erhöhen oder verringern kann. Die aktuelle Zahl
+ * wird in einem TextView-Element angezeigt.
+ */
 public class MainActivity extends Activity implements View.OnClickListener {
 
+    /** Aktueller Zählerwert. */
     protected int _zahl = 0;
 
+    /** Button-Element, um Zählerwert um +1 zu erhöhen. */
     protected Button _plusButton  = null;
 
+    /** Button-Element, um Zählerwert um -1 zu verringern. */
     protected Button _minusButton = null;
 
+    /** TextView-Element, in dem der aktuelle Zählerwert angezeigt wird. */
     protected TextView _zahlTextView = null;
 
+
     /**
-     * Lifecycle-Methode
+     * Lifecycle-Methode:
+     * Layout-Datei laden und Referenzen auf UI-Elemente holen und
+     * Event-Handler für Buttons setzen.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         _plusButton.setOnClickListener (this);
         _minusButton.setOnClickListener(this);
     }
+
 
     /**
      * Event-Handler-Methode für die beiden Buttons.
