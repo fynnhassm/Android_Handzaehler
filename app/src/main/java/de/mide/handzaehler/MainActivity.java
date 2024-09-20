@@ -23,6 +23,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     /** Button-Element, um Zählerwert um -1 zu verringern. */
     protected Button _minusButton = null;
 
+    protected Button _resetButton = null;
+
     /** TextView-Element, in dem der aktuelle Zählerwert angezeigt wird. */
     protected TextView _zahlTextView = null;
 
@@ -40,13 +42,26 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         _plusButton  = findViewById(R.id.plusButton);
         _minusButton = findViewById(R.id.minusButton);
+        _resetButton = findViewById(R.id.resetButton);
 
         _zahlTextView = findViewById(R.id.zahlTextView);
 
         _plusButton.setOnClickListener (this);
         _minusButton.setOnClickListener(this);
+        _resetButton.setOnClickListener(this);
+
+        if (_zahl == 0) {
+            _minusButton.setVisibility(View.GONE);
+        }
     }
 
+    public void onZahlChanged() {
+        if (_zahl == 0) {
+            _minusButton.setVisibility(View.GONE);
+        } else {
+            _minusButton.setVisibility(View.VISIBLE);
+        }
+    }
 
     /**
      * Event-Handler-Methode für die beiden Buttons.
@@ -64,6 +79,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             _zahl--;
 
+        } else if (view == _resetButton) {
+            if (_zahl != 0) {
+                _zahl = 0;
+            }
         } else {
 
             return; // Event ignorieren, weil von unbekanntem UI-Element ausgelöst
@@ -71,6 +90,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         String anzeigeText = _zahl + ""; // Trick: int nach String umwandeln
         _zahlTextView.setText( anzeigeText );
+        onZahlChanged();
     }
 
 }
